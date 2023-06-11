@@ -1,0 +1,121 @@
+nav {
+  padding: 2rem 1rem 0 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 4rem;
+    }
+  }
+  .search-box {
+    border: 1px solid #0000007c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    input {
+      width: 30rem;
+      padding-left: 5px;
+      height: 1.5rem;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      &:focus {
+        border: none;
+      }
+    }
+    .search {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 3px;
+      border-left: 1px solid #00000079;
+    }
+  }
+}
+
+.banner {
+  background-color: #f3f3f3;
+  margin: 0 5rem 0 5rem;
+  padding: 3rem 5rem 0 5rem;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-ir {
+    margin-top: 3rem;
+    background-color: #000;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: #fff;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.content {
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  margin: 1rem 1rem 2rem 1rem;
+  border: 1px solid #00000065;
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  padding: 1.5rem;
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .img-card {
+    margin-bottom: 1rem;
+    img {
+      width: 100%;
+    }
+  }
+  .star {
+    margin: 0.5rem 0 0.5rem 0;
+    button {
+      border: none;
+      background: none;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    svg {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .detalle-card {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100px;
+    height: 40px;
+    h6 {
+      color: #fff;
+    }
+  }
+}
+
+@import "style";
