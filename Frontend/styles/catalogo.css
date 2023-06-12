@@ -39,7 +39,8 @@ nav .search-box .search {
   border-left: 1px solid rgba(0, 0, 0, 0.4745098039);
 }
 
-.banner {
+/*BANNER*/
+.banner .contenedor-banner {
   background-color: #f3f3f3;
   margin: 0 5rem 0 5rem;
   padding: 3rem 5rem 0 5rem;
@@ -66,6 +67,77 @@ nav .search-box .search {
   color: #fff;
 }
 .banner .btn-ir:hover {
+  cursor: pointer;
+}
+
+.filter {
+  display: none;
+  padding: 5rem;
+}
+.filter .form-ingredient {
+  box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.1529411765);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.filter .form-ingredient .list-ingredient {
+  padding: 4rem;
+  justify-self: center;
+  min-width: 40%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1921568627);
+}
+.filter .form-ingredient .list-ingredient .lista {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.filter .form-ingredient .list-ingredient .lista .element {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137254902);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter .form-ingredient .list-ingredient .lista .element #element-btn {
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.filter .suggestion {
+  padding: 4rem;
+  justify-self: center;
+  max-width: 60%;
+}
+.filter .suggestion .content-suggestion {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter .suggestion #ingredient {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2196078431);
+  border-radius: 10px;
+  margin: 1rem 1rem;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+.filter .options {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.filter .options button {
+  border-radius: 10px;
+  border: none;
+  background: #15205f;
+  box-shadow: 3px 3px 3px rgba(21, 32, 95, 0.2549019608);
+  padding: 1rem 2rem;
+  color: #fff;
   cursor: pointer;
 }
 
