@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+body {
+  background-color: #f4f4f4;
+}
+
+nav {
+  min-height: 10vh;
+  padding-left: 10rem;
+  padding-right: 6rem;
+  border-bottom: 1px solid rgba(3, 3, 3, 0.3294117647);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  margin-right: 5rem;
+}
+nav ul li {
+  margin-right: 3rem;
+}
+nav .cliente {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  min-height: 89vh;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .invi {
+  display: none;
+}
+
+#barra {
+  width: 80vw;
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#barra .opciones {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#barra .opciones a {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #030303;
+}
+
+#contenedor {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+#contenedor .contenido {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 9vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 2fr 2fr 1fr 1fr;
+  margin-bottom: 3rem;
+}
+#contenedor .contenido span,
+#contenedor .contenido p,
+#contenedor .contenido h5,
+#contenedor .contenido div,
+#contenedor .contenido a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+  text-align: center;
+}
+#contenedor .estatico {
+  opacity: 0.6;
+}
+
+#contenedor-agregar {
+  padding: 5rem;
+  border-radius: 20px;
+  background-color: #fff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contenedor-agregar h3 {
+  color: #003c96;
+  font-weight: 600;
+}
+#contenedor-agregar div {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+#contenedor-agregar div label {
+  width: 20rem;
+  font-size: 2.3rem;
+  margin-right: 2rem;
+}
+#contenedor-agregar div input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid rgba(3, 3, 3, 0.4666666667);
+}
+#contenedor-agregar div textarea {
+  outline: none;
+  border: 1px solid rgba(3, 3, 3, 0.4823529412);
+  font-size: 1.7rem;
+  width: 100%;
+  height: 80px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+}
+#contenedor-agregar .full-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#contenedor-agregar .full-texto textarea {
+  width: 100%;
+  height: 120px;
+}
+#contenedor-agregar #btn-crear {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #003c96;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.invi {
+  display: none;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../assets/PPAcma-Semibold.otf);
+}
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #31456a;
+}
+
+h1 {
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #222222;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h4 {
+  color: #31456a;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+h6 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  color: #222222;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+a {
+  color: #31456a;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}/*# sourceMappingURL=nutricionista.css.map */

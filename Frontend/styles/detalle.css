@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+nav {
+  height: 10vh;
+  padding: 2rem 1rem 0 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*CONTENIDO DE LA PAGINA*/
+main {
+  height: 90vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+main #img-plato {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+main #img-plato img {
+  width: 70%;
+}
+main #detalle-plato {
+  width: 55%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #detalle-plato h2 {
+  color: #000;
+  font-weight: 500;
+  width: 60%;
+  text-align: center;
+}
+main #detalle-plato h5 {
+  color: rgba(0, 0, 0, 0.5803921569);
+  margin-bottom: 4rem;
+}
+main #detalle-plato p {
+  width: 65%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+main #detalle-plato input {
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #222222;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+main #detalle-plato #opciones-plato {
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+main #detalle-plato #opciones-plato a {
+  color: #222222;
+}
+main #detalle-plato #opciones-plato .border {
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  border-bottom: 2px solid #000;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../assets/PPAcma-Semibold.otf);
+}
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #31456a;
+}
+
+h1 {
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 7rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: #222222;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h4 {
+  color: #31456a;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+h6 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  color: #222222;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+a {
+  color: #31456a;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}/*# sourceMappingURL=detalle.css.map */

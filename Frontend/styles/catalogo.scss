@@ -18,6 +18,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     input {
       width: 30rem;
       padding-left: 5px;
@@ -25,6 +26,8 @@ nav {
       border: none;
       border-radius: 10px;
       outline: none;
+      font-family: "Montserrat", sans-serif;
+
       &:focus {
         border: none;
       }
@@ -169,13 +172,24 @@ nav {
     button {
       border: none;
       background: none;
+      overflow: hidden;
       &:hover {
         cursor: pointer;
+      }
+      &:focus {
+        svg circle {
+          fill: #fdd402;
+        }
       }
     }
     svg {
       margin-left: 5px;
       margin-right: 5px;
+      border: none;
+      outline: none;
+      circle{
+        fill: #ffe8518c;
+      }
     }
   }
   .detalle-card {

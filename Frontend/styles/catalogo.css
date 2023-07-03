@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 nav {
   padding: 2rem 1rem 0 1rem;
   margin-bottom: 1rem;
@@ -28,6 +29,7 @@ nav .search-box input {
   border: none;
   border-radius: 10px;
   outline: none;
+  font-family: "Montserrat", sans-serif;
 }
 nav .search-box input:focus {
   border: none;
@@ -172,13 +174,22 @@ nav .search-box .search {
 .card .star button {
   border: none;
   background: none;
+  overflow: hidden;
 }
 .card .star button:hover {
   cursor: pointer;
 }
+.card .star button:focus svg circle {
+  fill: #fdd402;
+}
 .card .star svg {
   margin-left: 5px;
   margin-right: 5px;
+  border: none;
+  outline: none;
+}
+.card .star svg circle {
+  fill: rgba(255, 232, 81, 0.5490196078);
 }
 .card .detalle-card {
   margin-top: 1.5rem;
@@ -233,19 +244,19 @@ h3 {
 h4 {
   color: #31456a;
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h5 {
   color: #000;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 400;
 }
 
 h6 {
   color: #000;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 p {

@@ -2,34 +2,40 @@ main {
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
 }
 
-.nav-container{  
+.nav-container {
   max-height: 10vh;
   padding-left: 10rem;
-  padding-right: 2rem;
+  padding-right: 6rem;
 }
 nav {
   padding: 2rem 0rem;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   align-items: center;
   ul {
     display: flex;
     margin-right: 5rem;
-    li{
+    li {
       margin-right: 3rem;
     }
   }
-  #logo {
-    position: relative;
+  .cliente {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
 }
+
 
 .login {
   background: #222222;
@@ -42,41 +48,38 @@ nav {
   min-height: 89vh;
   max-height: 90vh;
   display: grid;
-  grid-template-columns: 10% repeat(4,minmax(5rem,1fr)) 10%;
+  grid-template-columns: 10% repeat(4, minmax(5rem, 1fr)) 10%;
   grid-template-rows: 15% 20% 20% 20% 25%;
   h2 {
     grid-row: 2/3;
     grid-column: 2/4;
-    animation: deslizar-h2 2s;        
+    animation: deslizar-h2 2s;
   }
   h3 {
     grid-row: 3/4;
     grid-column: 2/4;
-          
   }
 
-  .imagen-plato {    
+  .imagen-plato {
     grid-row: 2/5;
-    grid-column: 4/6;     
+    grid-column: 4/6;
     width: 95%;
   }
-  .info{
+  .info {
     grid-row: 5/6;
     grid-column: 2/4;
-    animation: deslizar-info 2s; 
-    text-align: start;       
+    animation: deslizar-info 2s;
+    text-align: start;
   }
-  
 }
 
-
 @keyframes deslizar-h2 {
-  0%{
+  0% {
     transform: translate(-70vh);
   }
 }
 @keyframes deslizar-info {
-  0%{
+  0% {
     transform: translate(100vh);
   }
 }

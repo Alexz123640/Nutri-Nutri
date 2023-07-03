@@ -1,0 +1,97 @@
+nav {
+  height: 10vh;
+  padding: 2rem 1rem 0 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+/*CONTENIDO DE LA PAGINA*/
+main {
+  height: 90vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+
+  #img-plato {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    img {
+      width: 70%;
+    }
+  }
+  #detalle-plato {
+    width: 55%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: #000;
+      font-weight: 500;
+      width: 60%;
+      text-align: center;
+    }
+    h5 {
+      color: #00000094;
+      margin-bottom: 4rem;
+    }
+    p {
+      width: 65%;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    input {
+      width: 200px;
+      height: 50px;      
+      border: none;
+      outline: none;
+      background: #222222;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 40px;
+      text-align: center;      
+      //box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);      
+      
+      cursor: pointer;
+    }
+    #opciones-plato{
+      width: 100%;      
+      position: absolute;
+      bottom: 3%;            
+      display: flex;
+      justify-content: space-around;
+      a{
+        color: #222222;        
+      }
+      .border{
+        display: flex;
+        justify-content: center;
+        width: 5rem;
+        border-bottom: 2px solid #000;
+      }
+    }
+  }
+}
+
+@import "style";

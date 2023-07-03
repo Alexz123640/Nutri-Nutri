@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista</title>
+    <link rel="stylesheet" href="../styles/nutricionista.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/"><h1 id="logo">Nutri-Nutri</h1></a>
+      <ul>
+        <li><a href="/catalogo">Pedidos </a></li>
+        <li><a href="#">Mis Pedidos</a></li>
+
+      </ul>
+      <div class="cliente">
+        <a class="#" href="/cliente"><img src="../img/default"
+            onerror="this.src='../img/default_foto.png'" alt="user"></a>
+      </div>
+    </nav>
+    <main>
+
+      <section class="" id="contenedor">
+        <section id="barra">
+          <h1>Lista de Recetas</h1>
+          <div class="opciones">
+
+            <a href="#" id="btn-ir-agregar">Agregar</a>
+          </div>
+        </section>
+        <div class="contenido estatico">
+          <span><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+              viewBox="0 0 470 468" id="internet"><defs><filter id="a"
+                  width="111.8%" height="111.9%" x="-5.9%" y="-3.9%"
+                  filterUnits="objectBoundingBox"><feoffset dy="5"
+                    in="SourceAlpha" result="shadowOffsetOuter1"></feoffset><fegaussianblur
+                    in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                    stdDeviation="4"></fegaussianblur><fecolormatrix
+                    in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.078125 0"></fecolormatrix><feoffset
+                    dy="4" in="SourceAlpha" result="shadowOffsetOuter2"></feoffset><fegaussianblur
+                    in="shadowOffsetOuter2" result="shadowBlurOuter2"
+                    stdDeviation="5.5"></fegaussianblur><fecolormatrix
+                    in="shadowBlurOuter2" result="shadowMatrixOuter2"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.210824275 0"></fecolormatrix><femerge><femergenode
+                      in="shadowMatrixOuter1"></femergenode><femergenode
+                      in="shadowMatrixOuter2"></femergenode></femerge></filter><path
+                  id="b"
+                  d="M9.635 132.808C24.782 59.782 71.388 19.109 144.085 6.822c53.74-9.081 107.5-9.196 161.15.255 74.852 13.185 119.85 56.23 134.185 130.36 11.075 57.29 11.249 115.191-.174 172.427-15.324 72.52-63.132 117.285-135.561 129.527-53.74 9.08-107.5 9.195-161.15-.255-74.852-13.186-120.05-58.38-134.384-132.509-11.64-57.668-10.52-115.935 1.484-173.82z"></path></defs><g
+                fill="none" fill-rule="evenodd" transform="translate(-21 -26)"><g
+                  transform="translate(32 33)"><use fill="#000" filter="url(#a)"
+                    xlink:href="#b"></use><use fill="#706CF5" xlink:href="#b"></use></g><path
+                  fill="#FFF"
+                  d="M367.092 257.907c-1.943 7.32-9.9 12.583-22.292 15.743 5.596-12.596 9.257-26.233 10.657-40.536 9.24 8.913 13.583 17.455 11.635 24.793m-153.783 4.965c-41.598-11.042-77.605-26.335-101.378-41.787-.003-.329-.013-.657-.013-.987 0-61.91 50.189-112.098 112.099-112.098 61.91 0 112.098 50.188 112.098 112.098 0 20.75-5.646 40.176-15.475 56.842-28.18 1.398-66.426-3.21-107.331-14.068M82.235 182.29c1.864-7.022 9.28-12.143 20.819-15.337a131.248 131.248 0 0 0-10.378 38.975c-8.43-8.496-12.305-16.617-10.441-23.638M224.017 88c69.935 0 127.169 54.35 131.788 123.115 22.069 17.721 33.394 36.296 29.165 52.229-4.253 16.019-23.48 26.563-51.68 30.964-.143.213-15.666 2.197-24.56 2.203-29.321.942-64.602-3.232-101.502-13.027-88.943-23.611-153.572-70.908-144.352-105.641 4.224-15.914 23.228-26.421 51.123-30.874C137.673 111.425 178.107 88 224.017 88zm58.827 227.531c11.572.633 22.517.586 32.63-.121-23.735 22.782-55.96 36.787-91.457 36.787-61.18 0-112.636-41.593-127.658-98.042 8.214 6.013 17.642 11.887 28.09 17.483 18.66 35.976 56.24 60.559 99.568 60.559 21.577 0 41.726-6.102 58.827-16.666z"
+                  transform="translate(32 33)"></path></g></svg></span>
+          <p>Nombre</p>
+          <p>Imagen</p>
+          <p>Cocinero</p>
+          <p>Ingredientes</p>
+          <p>Valor</p>
+          <p>Check</p>
+          <p>Editar</p>
+        </div>
+        <% platos.forEach((plato)=>{%>
+        <div class="contenido ">
+          <span><svg xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50"
+              viewBox="0 0 470 468" id="internet"><defs><filter id="a"
+                  width="111.8%" height="111.9%" x="-5.9%" y="-3.9%"
+                  filterUnits="objectBoundingBox"><feoffset dy="5"
+                    in="SourceAlpha" result="shadowOffsetOuter1"></feoffset><fegaussianblur
+                    in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                    stdDeviation="4"></fegaussianblur><fecolormatrix
+                    in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.078125 0"></fecolormatrix><feoffset
+                    dy="4" in="SourceAlpha" result="shadowOffsetOuter2"></feoffset><fegaussianblur
+                    in="shadowOffsetOuter2" result="shadowBlurOuter2"
+                    stdDeviation="5.5"></fegaussianblur><fecolormatrix
+                    in="shadowBlurOuter2" result="shadowMatrixOuter2"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.210824275 0"></fecolormatrix><femerge><femergenode
+                      in="shadowMatrixOuter1"></femergenode><femergenode
+                      in="shadowMatrixOuter2"></femergenode></femerge></filter><path
+                  id="b"
+                  d="M9.635 132.808C24.782 59.782 71.388 19.109 144.085 6.822c53.74-9.081 107.5-9.196 161.15.255 74.852 13.185 119.85 56.23 134.185 130.36 11.075 57.29 11.249 115.191-.174 172.427-15.324 72.52-63.132 117.285-135.561 129.527-53.74 9.08-107.5 9.195-161.15-.255-74.852-13.186-120.05-58.38-134.384-132.509-11.64-57.668-10.52-115.935 1.484-173.82z"></path></defs><g
+                fill="none" fill-rule="evenodd" transform="translate(-21 -26)"><g
+                  transform="translate(32 33)"><use fill="#000" filter="url(#a)"
+                    xlink:href="#b"></use><use fill="#706CF5" xlink:href="#b"></use></g><path
+                  fill="#FFF"
+                  d="M367.092 257.907c-1.943 7.32-9.9 12.583-22.292 15.743 5.596-12.596 9.257-26.233 10.657-40.536 9.24 8.913 13.583 17.455 11.635 24.793m-153.783 4.965c-41.598-11.042-77.605-26.335-101.378-41.787-.003-.329-.013-.657-.013-.987 0-61.91 50.189-112.098 112.099-112.098 61.91 0 112.098 50.188 112.098 112.098 0 20.75-5.646 40.176-15.475 56.842-28.18 1.398-66.426-3.21-107.331-14.068M82.235 182.29c1.864-7.022 9.28-12.143 20.819-15.337a131.248 131.248 0 0 0-10.378 38.975c-8.43-8.496-12.305-16.617-10.441-23.638M224.017 88c69.935 0 127.169 54.35 131.788 123.115 22.069 17.721 33.394 36.296 29.165 52.229-4.253 16.019-23.48 26.563-51.68 30.964-.143.213-15.666 2.197-24.56 2.203-29.321.942-64.602-3.232-101.502-13.027-88.943-23.611-153.572-70.908-144.352-105.641 4.224-15.914 23.228-26.421 51.123-30.874C137.673 111.425 178.107 88 224.017 88zm58.827 227.531c11.572.633 22.517.586 32.63-.121-23.735 22.782-55.96 36.787-91.457 36.787-61.18 0-112.636-41.593-127.658-98.042 8.214 6.013 17.642 11.887 28.09 17.483 18.66 35.976 56.24 60.559 99.568 60.559 21.577 0 41.726-6.102 58.827-16.666z"
+                  transform="translate(32 33)"></path></g></svg></span>
+          <h5><%= plato.nombre%></h5>
+          <div><img src onerror="this.src='../img/plato-pescado.jpg'"
+              alt="plato" width="60"></div>
+          <h5><%= plato.nombre_cocinero%></h5>
+          <h5><%= plato.ingredientes%></h5>
+          <h5><%= plato.valor_nutricional%></h5>
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+              height="30" viewBox="0 0 24 24" id="check"><path fill="none"
+                d="M0 0h24v24H0V0z"></path><path
+                d="M9 16.17L5.53 12.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L9 16.17z"></path></svg></span>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+              height="30" viewBox="0 0 24 24" id="edit"><path
+                d="M5,18H9.24a1,1,0,0,0,.71-.29l6.92-6.93h0L19.71,8a1,1,0,0,0,0-1.42L15.47,2.29a1,1,0,0,0-1.42,0L11.23,5.12h0L4.29,12.05a1,1,0,0,0-.29.71V17A1,1,0,0,0,5,18ZM14.76,4.41l2.83,2.83L16.17,8.66,13.34,5.83ZM6,13.17l5.93-5.93,2.83,2.83L8.83,16H6ZM21,20H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path></svg></a>
+        </div>
+        <%})%>
+      </section>
+      <section class="" id="contenedor-agregar">
+        <h3>NUEVO PLATO</h3>
+        <form action="#">
+          <div>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Ingrese nombre">
+          </div>
+          <div>
+            <label>Descripción:</label><br>
+            <textarea placeholder="Ingrese descripción"></textarea>
+          </div>
+
+          <div class="full-texto">
+            <label>Preparación:</label>
+            <textarea placeholder="Ingrese instrucciones de preparación"></textarea>
+          </div>
+
+          <div>
+            <label>Ingredientes:</label>
+            <textarea  placeholder="Ingrese los ingredientes"></textarea>
+          </div>
+
+          <div>
+            <label>Valor nutricional:</label>
+            <input type="text" placeholder="Ingrese el valor nutricional">
+          </div>
+
+          <div>
+            <label>Imagen:</label>
+            <input id="input-img" type="file" accept="image/*">
+          </div>
+
+          <input id="btn-crear" type="submit" value="Crear">
+        </form>
+      </section>
+    </main>
+    <script src="../js/nutricionista.js"></script>
+  </body>
+</html>
