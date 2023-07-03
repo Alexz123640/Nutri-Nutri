@@ -25,3 +25,4 @@ npm install
 ## Ejecucion
 
 node index.js
+Ver en http://localhost:3000/
